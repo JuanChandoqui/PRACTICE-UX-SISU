@@ -1,0 +1,275 @@
+body {
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0;
+}
+
+.container-header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/pictures/masaaki-komori-14cHwhRKJh8-unsplash.jpg');
+    background-size: 100% 100%;
+}
+
+.content-page{
+    display: flex; 
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    line-height: 0;
+}
+
+.header-icon{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-title{
+    position: relative;
+    position: absolute;
+    padding-left: 4%;
+}
+
+
+/* MOBILE */
+@media(min-width:300px){
+    .header-title{
+        padding-top: 25%;
+    }
+}
+
+/* Tablet & Desktop*/
+@media(min-width:600px){
+    .header-title{
+        padding-top: 15%;
+    }
+}
+
+
+.header-title-main{
+    font-size: 45px;
+}
+
+.button-header{
+    position: absolute;
+    margin-left: -50px;
+    left: 50%;
+    width: 200px;
+    height: 40px;
+    bottom: 20px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(90deg, #96115c 0%, #b71e74 100%);
+}
+
+.information-section{
+    padding-top: 4%;
+    padding-left: 50%;
+    padding-right: 10%;
+}
+
+li{
+    list-style-image: url('../img/icons/vector-flower.png');
+}
+
+.list-item{
+    margin: 0;
+    padding-left: 4%;
+    padding-top: 4%;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.item-right{
+    padding-left: 10%;
+}
+
+h3{
+    display:inline;
+}
+
+.item-description{
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.grid-image{
+    padding-top: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}
+
+.grid-image-1{
+    border-radius: 20px 0 0 0;
+}
+
+.grid-image-1, .grid-image-2{
+    grid-row: 1/3;
+    height: 100%;
+}
+
+.grid-image-3{
+    grid-column: 3/3;
+    grid-row: 1/5;
+    height: 100%;
+    border-radius: 0 20px 20px 0;   
+}
+
+.grid-image-4{
+    border-radius: 0 0 0 20px;
+    grid-column: 1/3;
+    grid-row: 3/5;
+    height: 100%;
+    object-fit: cover;
+     display:block;
+}
+
+.grid-image img{
+    width: 100%;
+}
+
+.container{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.container-subscription{
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: linear-gradient(90deg, #96115c 0%, #b71e74 100%);
+}
+
+/* MOBILE */
+@media(min-width:300px){
+    .container-subscription{
+        height: 140px;
+    }
+}
+
+/* Tablet & Desktop*/
+@media(min-width:900px){
+    .container-subscription{
+        height: 100px;
+    }
+}
+
+/* Tablet & Desktop*/
+@media(min-width:1300px){
+    .container-subscription{
+        height: 50px;
+    }
+}
+
+.container-subscription-text{
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+/* Tablet & Desktop*/
+@media(min-width: 1200px){
+    .container-subscription-text{
+        text-align: start;
+    }
+}
+
+.container-subscription-input{
+    border-radius: 4px 0 0 4px;
+    border: 1px solid transparent;
+    width: 56%;
+    height: 26px;
+    margin: 0;
+    padding-right: 50px;
+}
+
+.container-subscription-button{
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    margin-left: -10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: transparent;
+}
+
+.container-phrase-content{
+    padding-left: 28%;
+    padding-right: 28%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #e4e7eb;
+}
+
+.container-phrase-content-text{
+    color: #323c49;
+    font-style: italic;
+}
+
+.container-phrase-content-autor{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: end;
+}
+
+.container-footer{
+    position: absolute;
+    width: 100%;
+}
+
+.footer{
+    background-color: black;
+    position: relative;
+    display: flex; 
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.footer-icon{
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.social-icons{
+    margin: 0px -10px;
+    width: 20px;
+    height: 20px;
+}
